@@ -1,0 +1,8 @@
+*~
+#*#
+*_flymake.*
+*.pyc
+.unittest-gtest
+.waf-*
+build
+.lock-waf*
