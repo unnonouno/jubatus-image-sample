@@ -13,7 +13,7 @@ class image_feature : public jubatus::core::fv_converter::binary_feature {
     cv::Mat mat = cv::imdecode(cv::Mat(buf), CV_LOAD_IMAGE_COLOR);
     for (int y = 0; y < mat.cols; ++y) {
       for (int x = 0; x < mat.rows; ++x) {
-        cv::Vec3b vec = mat.at<cv::Vec3b>(y, x);
+        const cv::Vec3b& vec = mat.at<cv::Vec3b>(y, x);
         for (int c = 0; c < 3; ++c) {
           std::ostringstream oss;
           oss << key << '-' << x << '-' << y << '-' << c;
