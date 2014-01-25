@@ -15,7 +15,7 @@
     "binary_types": {
       "image": {
         "method": "dynamic",
-        "path": "./build/libimage_feature.so",
+        "path": "libimage_feature.so",
         "function": "create"
       }
     },
