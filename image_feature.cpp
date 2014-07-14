@@ -1,6 +1,6 @@
 #include <sstream>
 
-#include <jubatus/core/plugin.hpp>
+#include <jubatus/core/fv_converter/binary_feature.hpp>
 #include <opencv2/opencv.hpp>
 
 class image_feature : public jubatus::core::fv_converter::binary_feature {
